@@ -1,0 +1,420 @@
+body{
+  margin:0;
+  padding:0;
+  }
+  
+  /*网页顶部 品胜当日达、品胜官网、防伪查询、登录、注册、客户服务*/
+  div.header-top{
+    background:rgba(225,225,225,.3);
+    width:100%;
+    height:40px;
+    line-height:39px;
+  }
+  div.top{
+    margin:0 auto;
+    width:1241px;;
+    height:40px;
+    line-height:39px;
+    position: relative;
+    display:flex;
+    padding:0;
+  }
+  div.top div a{
+    text-decoration:none;
+    color:#666;
+    font-size:10px;
+    margin:auto 10px;
+  }
+  div.top .top-left{
+    /*float:left;
+    margin-left:15%;*/
+    position: absolute;
+    left:0;
+    padding-left:0;
+  }
+  div.top .top-right{
+    /*float:right;
+    margin-right:15%;*/
+    position: absolute;
+    right:0;
+  }
+  #signin{
+    position:absolute;
+    right:0;
+    display:none;
+  
+  }
+  div.top div a.a-first{
+    margin-left:0;
+  }
+  div.top div a.a-last{
+    margin-right:0;
+  }
+  /*.top-left,.top-right:after{
+    content:"";
+    display:block;
+    clear:both;
+  }*/
+  /*logo,搜索,购物车*/
+  a{
+    text-decoration:none;
+  }
+  div.search{
+    margin:20px auto;
+    width:1241px;
+    height:110px;
+    display:flex;
+    position: relative;
+  }
+  div.logo{
+    position: absolute;
+    left:0;
+  }
+  div.search-right{
+    position: absolute;
+    right:0;
+  }
+  div.search-right span{
+    border: 1px solid #ddd;
+    display:inline-block;
+    height:41px;
+    line-height:41px;
+    margin-left:5px;
+    margin-right:5px;
+    padding:0 5px;
+  }
+  a.search-link{
+    padding:5px;
+    color:#222;
+    font-size:12px;
+    transition:all .3s linear;
+  }
+  a.search-link:hover{
+    background:#f0f0f0;
+    border-radius:10px;
+    color:#fabe00;
+  }
+  input.search-input{
+    border:0;
+    outline:0;
+  }
+  
+  div.search-right span.search-circle{
+    margin-right:0;
+    padding:0;
+    background:#fff;
+    border-right:0;
+    width:35px;
+    height:39px;
+  }
+  div.search-right span.search-circle a img{
+    vertical-align:top;
+  }
+  span.core button{
+    width:97px;
+    height:41px;
+    padding:6px 9px;
+    border:1px solid #aaa;
+    border-radius:2px;
+    border-color: #e6e6e6;
+    box-sizing:border-box;
+    /* line-height:26px; */
+    font-size:14px;
+    color: #333;
+      }
+  /* 	button{
+    padding:0;
+    border:0;
+    width:40px;
+    height:50px;
+  } */
+  div.search-right span.core{
+    text-align:center;
+    background-color: #fff;
+      border:0;
+    position: relative;
+    padding:0;
+  }
+  ul.hide{
+    margin:0;
+    padding: 0;;
+    font-size:10px;
+    border:1px solid #ccc;
+    display: none;
+    box-sizing:border-box;
+  }
+  ul.hide > li{
+    padding:0;
+    margin:0;
+    text-align:center;
+  }
+  ul.hide > li > a{
+    padding:0 23px;
+    color:#666;
+    font-size:12px;
+  }
+  span.core:hover ul.hide{
+    display: block;
+    position: absolute;
+    background:#fff;
+    z-index:20;
+  }
+  span.shopping{
+      border-radius: 2px;
+      background-color: #fabe00;
+      border-color: #fabe00;
+  }
+  span.shopping a{
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 6px 9px;
+  }
+  span.shopping a span.car-count{
+    border:0;
+    padding:0;
+  }
+  span.shopping > img{
+    margin-right:4px;
+    vertical-align:center;
+  }
+  /*导航栏*/
+  div.navbox{
+    display: flex;
+    margin:0 auto;
+    padding:0;
+    width:1241px;
+    height:48px;
+    background:#481c87;
+    box-sizing:border-box;
+  }
+  /*1.首页、移动电源等*/
+  ul,li{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+  }
+  
+  div.navbox-top{
+    position: relative;
+  }
+  div.navbox-top ul li a,div.navbox-left div.list a{
+    height:48px;
+    line-height:48px;
+    color:white;
+    font-size:18px;
+    box-sizing:border-box;
+  }
+  div.navbox-top ul li{
+    padding:0 30px;
+    display:inline-block;
+  
+  }
+  div.navbox-top ul li div.hover{
+    display: none;
+    position: absolute;
+    top:32px;
+    left:0;
+    z-index:20;
+  }
+  div.navbox-top ul li:hover div.hover{
+    display:flex;
+  }
+  div.navbox-top ul li.main:hover{
+    background:#6600cc;
+  }
+  dl.hover-item{
+    width:495px;
+    border:1px solid #667;
+    display:flex;
+    position: relative;
+    background: #fff;
+  }
+   
+  dt,dd{
+    display:inline-block;
+  }
+  
+  div.hover dl.hover-item dd a{
+    font-size:18px;
+    color:#000;
+  }
+  div.hover dl dd div.det{
+    font-size:14px;
+    color:#333;
+    margin-bottom:20px;
+  }
+  div.hover dl dd div.pri{
+    font-size:18px;
+    color:red;
+    font-weight:blod;
+  }
+  /*左侧商品列表的鼠标悬停*/
+  div.list{
+    width:250px;
+    height:48px;
+    box-sizing:border-box;
+  }
+  div.list-name{
+    background:#fabe00;
+    padding-left:40px;
+    padding-right:80px;
+    margin-bottom:0;
+  }
+  div.navbox-left{
+    width:250px;
+    box-sizing:border-box;
+    
+  }
+  div.navbox-left ul li{
+    border:1px solid #ccc;
+    margin:0;
+    padding:10px;
+    text-align:left;
+  }
+  div.navbox-left ul{
+    padding-left:0;
+    margin-top:0;
+    background:#f0f0f0;
+  }
+  div.navbox-left ul li p a{
+    font-size:14px;
+    color:#666;
+    height:20px;
+  }
+  div.navbox-left ul li p{
+    height:20px;
+    margin-top:0;
+  }
+  div.navbox-left ul li p > a{
+    color:#481c87;
+  }
+  div.navbox-left ul li p span > a:hover{
+    color:#fabe00;
+  }
+  div.navbox-left ul li{
+    position:relative;
+  }
+  div.navbox-left ul li div.hover1{
+    display:none;
+    position:absolute;
+    left:250px;
+    top:0;
+    width:250px;
+    background-color: #fafafa;
+      border: #e6e6e6 solid;
+      border-width: 1px 1px 1px 0;
+      padding:15px;
+      box-sizing:border-box;
+      z-index:2;
+  }
+  div.navbox-left ul li div.hover2{
+    top:-10px;
+  }
+  div.navbox-left ul li div.hover3{
+    top:-190px;
+  }
+  div.navbox-left ul li div.hover1 p{
+    padding:20px;
+    margin:25px;
+  }
+  div.navbox-left ul li div.hover1 p a>img{
+    width:48px;
+    height:48px;
+    vertical-align:middle;
+  }
+  div.navbox-left ul li div.hover1 p a{
+    color:#000;
+  }
+  div.navbox-left ul li div.hover1 p a:hover{
+    color:#fabe00;
+  }
+  div.navbox-left ul li:hover div.hover1{
+     display:block;
+     background:#fff;
+     
+  }
+  div.navbox-left ul li:hover{
+     background:#fff;
+  }
+  div.navbox{
+    position: relative;
+  }
+  div.lunbo{
+    position:absolute;
+    top:48px;
+    left:251px;
+    z-index:1;
+  }
+  
+  a.left,a.right{
+    background:url("../img/index/bg_direction_nav.png") no-repeat;
+    opacity: 0;
+    display: block;
+    width: 52px;
+    height: 70px;
+    position: absolute;
+    top:25%;
+  }
+  a.right{
+    right:-18px;
+    background: url("../img/index/bg_direction_nav.png") no-repeat -70px 0 ;
+  }
+  div.lunbo:hover a{
+    opacity: 1;
+  }
+  a.left:hover{
+    background:url("../img/index/bg_direction_nav.png") no-repeat 0 -70px;
+  }
+  a.right:hover{
+    background:url("../img/index/bg_direction_nav.png") no-repeat -70px -70px;
+  }
+  
+  button :hover{
+    background:#96a2ac;
+  }
+  img.lunbo-img{
+    width:32.5%;
+    height:182px;
+    border: 1px solid #ccc;
+    margin:0;
+  }
+  #box{
+      margin:0 auto;
+      width:991px;
+      height:450px;
+      overflow:hidden;
+      position: relative;
+    }
+  #lunbo{
+      list-style:none;
+       width:991px;
+      height:450px;
+      display:flex;
+      justify-content:flex-start;
+      position: absolute;
+      margin:0;
+      padding:0;
+    }
+
+    
+/* 其他头部页面样式 */
+    div.list-name{
+      background:#fabe00 url("../img/index/5.png") no-repeat 98%;
+      width:250px;
+      height:48px;
+      box-sizing:border-box;
+    }
+    ul.list-content{
+      display: none;
+      position: relative;
+      z-index:20;
+      transition:all .5s linear;
+    }
+    div.navbox-left:hover ul.list-content{
+      display: block;
+      
+    }
+    div.list:hover div.list-name{
+      background-image:url("../img/index/6.png");
+    }

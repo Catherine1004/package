@@ -1,0 +1,299 @@
+body{
+    margin:0 auto;
+    padding:0;
+}
+#header{
+	height:300px;
+}
+#footer{
+	height:500px;
+	background:#fafafa;
+}
+/*主体*/
+div.container{
+	width:1241px;
+	margin:0 auto;
+	padding:0;
+	position: relative;
+	z-index:0;
+	box-sizing:border-box;
+}
+
+a:hover{
+	color:#fabe00;
+}
+.font-s12{
+	font-size:12px;
+}
+
+/*全部商品列表*/
+.list-title {
+	margin:0;
+	padding:0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+}
+div.list-box{
+	border-top:1px solid #e6e6e6;
+	border-bottom:1px solid #e6e6e6;
+}
+div.list-box > dl > dd,div.list-box > dl > dt{
+	display:inline-block;
+	margin:0;
+	height:50px;
+}
+div.list-box > dl > dt{
+	font-size:14px;
+}
+ul.list li{
+	display:inline-block;
+	margin-right:16px;;
+}
+ul.list li a{
+	height:50px;
+	line-height:50px;
+}
+ul.list li.active a{
+	color:#fabe00;
+}
+ul.list,dl.list-content{
+	padding:0;
+	margin:0 auto;
+	height:50px;
+}
+/*默认、销量、价格等*/
+div.list-head{
+	text-align:center;
+	margin-top:30px;
+}
+a.conditions{
+	display: inline-block;
+	background-color: #fafafa;
+	margin-right:-5px;
+	width:66px;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+	border:1px solid #e6e6e6; 
+	border-left:0;
+	box-sizing:border-box;
+}
+a.conditions-first{
+	background:#fabe00;
+	border:1px solid #fabe00;
+	color:#fff;
+}
+a.conditions-last{
+	width:96px;
+	border:1px solid #e6e6e6;
+}
+/*产品*/
+ul{
+	padding:0;
+}
+li.goods{
+	width:305px;
+	height:384px;
+	border:1px solid #ddd;
+	float:left;
+	position: relative;
+	
+	transition:all .5s linear;
+}
+div.d-goods{
+	width:305px;
+	height:384px;
+	box-sizing:border-box;
+}
+ul.goods-list::after{
+	display:table;
+	content:"";
+	clear:both;
+}
+img.goods-img{
+	margin-top:20px;
+	margin-left:35px;
+	width:240px;
+	height:240px;
+	transition:all 1s linear;
+}
+div.goods-name{
+	
+	text-align: center;
+
+}
+div.goods-name p a{
+	font-size:13px;
+}
+span.delete{
+	font-size:11px;
+	text-decoration:line-through;
+	color:#ddd;
+}
+div.sh_car{
+	width:305px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	padding:10px 20px;
+	/*margin-top:30px;*/
+	display:none;
+	position:absolute;
+	bottom:-66px;
+	background: #fff;
+	z-index:10;
+}
+div.d{
+	position: relative;
+	z-index:5;
+}
+li.goods:hover div.sh_car{
+	display: block;
+}
+li.goods:hover{
+	box-shadow:0 0 15px #570211;
+}
+li.goods:hover img.goods-img{
+	transform:scale(1.1,1.1)
+}
+div.sh_car button.btn-sh{
+	background:#f34f2f;
+	padding:6px 9px;
+	font-size:14px;
+	color:#fff;
+	border-color:#f34f2f;
+}
+div.sh_car a.buy{
+	padding:7px 9px;
+	font-size:14px;
+	color:#f34f2f;
+	border:1px solid #f34f2f;
+}
+div.sh_car a.buy:hover{
+	background:#f34f2f;
+	color:#fff;
+}
+div.sh_car button.btn-xin{
+	padding:17px 18px;
+	background:url("../img/product/xin.png") no-repeat center;
+	position: relative;
+	top:-5px;
+}
+/*底部侧边固定栏*/
+	/* ul,ol,li{
+		list-style:none;
+	}
+	div.aside ol{
+		margin-top:0;
+		position: relative;
+		top:-3px;
+		right:15px;
+	}
+	div.aside{
+		position: fixed;
+		text-align:center;
+		right:0;
+		bottom:0;
+	}
+	div.aside ol li a img.img-y{
+		display: none;
+	}
+	div.aside ol li:hover img.img-y{
+		display: block;
+	}
+	div.aside ol li:hover img.img-x{
+		display: none;
+	}*/
+/*分页*/
+	div.limit{
+	margin-top:40px;
+	 text-align:center;
+	}
+	div.limit> span{
+		border:1px solid #ccc;
+		border-radius:2px;
+		padding:10px;
+		font-size:13px;
+		margin-right:5px;
+	}
+	div.limit span.disabled{
+		background:#f2f2f2;
+	}
+	span.active{
+		background:#fabe00;
+	}
+
+	div.limit input{
+		width:35px;
+		height:30px;
+		margin-right:5px;
+	} 
+/*热销推荐*/
+div.d-hot{
+	margin-top:80px;
+}
+a{
+	text-decoration:none;
+	color:#222;
+	font-size:14px;
+	text-align:center;
+}
+
+a:hover{
+	color:#ff9900;
+}
+div.main-box{
+	width:1240px;
+	box-sizing:border-box;
+	display:flex;
+}
+div.box{
+	border:1px solid #ccc;
+	position: relative;
+	box-sizing:border-box;
+	transition:all 0.2s linear;
+}
+img.scale{
+	transition:all 0.2s linear;
+}
+div.box:hover{
+	box-shadow:0 0 15px #ff4040;
+}
+div.box:hover img.scale{
+	transform:scale(1.1,1.1);
+}
+div.hot-font{
+	font-size:20px;
+	padding-bottom:15px;
+}
+span.hot{
+	background:#f34f2f;
+    position: absolute;
+    top: -1px;
+    left: 10px;
+	width: 48px;
+    height: 24px;
+    line-height: 23px;
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    font-size: 12px;
+}
+div.pro{
+	margin:20px;
+}
+div.name{
+	text-align:center;
+	margin:10px 15px;
+	overflow:nowrap;
+}
+div.price{
+	text-align:center;
+	font-weight:bold;
+	
+}
+span.price-d{
+	font-size:18px;
+}

@@ -1,0 +1,246 @@
+ul,li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.footer{
+	width:1241px;
+	margin:0 auto;
+	margin-top:60px;
+	padding-top:40px;
+	border-top:1px solid #ccc;
+	position: relative;
+	background:#fafafa;
+}
+div.footer1 ul{
+/* 	width:100%; */
+	display:flex;
+	justify-content:center;
+}
+div.footer1 ul li{
+	margin-right:90px;
+}
+div.footer1 ul li.main-t{
+	margin-right:0;
+}
+div.footer1 ul li a div{
+	text-align:center;
+	color:#000;
+}
+/* 时钟 */
+	div.shizhong{
+		width:40px;
+		height:40px;;
+		position: relative;
+		margin-bottom:30px;
+		left:15px;
+	}
+  	div.squre{
+		width:14px;
+		height:8px;
+		margin:0 auto;
+		background:#ccc;
+		position: absolute;
+		left:16px;
+	}
+	div.top{
+		top:-7.5px;
+	}
+	div.bottom{
+		bottom:-12px;
+	}
+	div.circle{
+		width:40px;
+		height:40px;
+		margin:0 auto;
+		border:3px solid #ccc;
+		border-radius:50% 50%;
+		position: relative;
+	}	  
+	p.hour{
+		width:6px;
+		height:15px;
+		background:#ccc;
+		position: absolute;
+		top:-7.5px;
+		left:17px;
+		transform-origin:center bottom;
+	}
+	p.second{
+		width:18px;
+		height:6px;
+		background:#ccc;
+		position: absolute;
+		top:2.5px;
+		left:17px;
+		transform-origin:center bottom;
+	}
+	div.shizhong:hover div.squre{
+		background:purple;
+	} 
+	div.shizhong:hover div.circle{
+		border-color:purple;
+	} 
+	div.shizhong:hover p.hour{
+		background:purple;
+	} 
+	div.shizhong:hover p.second{
+		background:purple;
+	} 
+/* 日历 */
+	div.rili{
+		width:40px;
+		height:40px;
+		border:3px solid #ccc;
+		position: relative;
+		padding:0;
+		margin-bottom:25px;
+		left:28px;
+	}
+	div.rili-k{
+		width:8px;
+		height: 10px;
+		background: #ccc;
+		position: absolute;
+		top:-6px;
+	}
+	div.left{
+		left:3px;
+	}
+	div.middle{
+		left:17.5px;
+	}
+	div.right{
+		left:30px;
+	}
+	p.rili-d{
+		/* text-align:center; */
+		font-size:30px;
+		font-weight:bold;
+		color:#ccc;
+		position: absolute;
+		top:-25px;
+		left:14px;
+	}
+	div.rili:hover{
+		border-color:purple;
+	}
+	div.rili:hover div.rili-k{
+		background:purple;
+	}
+	div.rili:hover p.rili-d{
+		color:purple;
+	}
+/* 7天无理由退换货、退换货流程 */
+	div.dingwei{
+		position: relative;
+		margin-bottom:10px;
+	}
+	div.dingwei-y{
+		position: absolute;
+		visibility:hidden;
+		top:0;
+		left:0;
+	}
+	div.dingwei:hover div.dingwei-y{
+		visibility:visible;
+		left:28px;
+	}
+	div.dingwei:hover div.t1{
+		left:28px;
+	}
+	div.dingwei:hover div.t2{
+		left:0px;
+	}
+/* 帮助栏 */
+	div.footer2{
+/* 		width:1241px; */
+		border-top:1px solid #ccc;
+		position: relative;
+		/* left:290px; */
+		margin-top:40px;
+		padding-top:40px;
+		display:flex;
+		justify-content:center;
+	}
+	div.footer2 ul li{
+		font-size:14px;
+		margin-bottom:10px;
+		color:#646464;
+	}
+	div.footer2 ul.right{
+		margin-right:80px;
+	}
+	div.footer2 ul.last{
+		margin-right:-100px;
+	}
+	div.footer2 ul li.line1{
+		font-size:16px;
+		color:#000;
+		margin-bottom:18px;
+	}
+	div.footer2 ul li.img{
+		margin-bottom:10px;
+	}
+	div.footer2 ul li.ws{
+		display: flex;
+		justify-content:center;
+	}
+	div.wx{
+		position: relative;
+		margin-right:20px;
+	}
+	div.wx_saoma,div.wx_green{
+		display:none;
+		position: absolute;
+	}
+	div.wx_saoma{
+		top:-235px;
+	}
+	div.wx_green{
+		top:-3px;
+	}
+	div.wx:hover div.wx_saoma{
+		display: block;
+	}
+	div.wx:hover div.wx_green{
+		display: block;
+	}
+
+	div.footer3 ul{
+		display: flex;
+		justify-content:center;
+	}
+	div.footer3 ul li a{
+		font-size:14px;
+		color:#646464;
+	}
+	div.footer3 p{
+		text-align:center;
+		color:#8b8b8b;
+	}
+/*侧边固定栏*/
+	div.aside ol{
+		margin-top:0;
+		position: relative;
+		top:-3px;
+		right:15px;
+	}
+	div.aside{
+		position: fixed;
+		text-align:center;
+		right:0;
+		bottom:0;
+		z-index:100;
+	}
+	div.aside ol li a img.img-y{
+		display: none;
+	}
+	div.aside ol li:hover img.img-y{
+		display: block;
+	}
+	div.aside ol li:hover img.img-x{
+		display: none;
+	}
+	
