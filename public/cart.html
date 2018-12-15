@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>我的购物车 品胜网上商城-网购+实体新一代购物平台</title>
+  <link rel="stylesheet" href="./css/cart.css">
+ </head>
+ <body>
+  <header id="header">
+    <div class="header-top">
+      <div class="top">
+        <div class="top-left">
+          <a href="#" class="a-first">品胜当日达</a>
+          <a href="#">品胜官网</a>
+          <a href="#">防伪查询</a>
+        </div>
+        <div id="signout" class="top-right">
+          <a href="#" id="btnLogin">登录</a>
+          <a href="#" id="btnRegister">注册</a>
+          <a href="#" class="a-last">客户服务</a>
+        </div>
+        <div id="signin">
+          <a class="" href="#">Welcome <span id="uname"></span></a>
+          <a class="" id="btnSignout" href="javascript:;">注销</a>
+          <a href="#" class="a-last">客户服务</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="cart-container">
+    <div class="logo-box">
+      <div class="logo">
+        <a href="index.html"><img src="./img/register/logo.png"></a>
+      </div>
+      <div class="line01"></div>
+      <div class="line02"></div>
+    </div>
+    <div id="cart">
+      <!-- <div class="shop-container">
+        <div class="shop-title">我的购物车</div>
+        <div class="shopcart">
+          <div><img src="./img/shoppingcart.jpg" alt=""></div>
+          <div>
+            <div class="goshop">亲，购物车暂时为空哟，去挑选心爱的商品吧！</div>
+            <div class="btn-shop"><a href="product.html">马上购物</a></div>
+          </div>
+        </div>
+      </div> -->
+      <div class="content cart-container">
+        <span class="sc-title">我的购物车</span>
+        <span class="flag">
+          <span>现在</span>
+          <a href="user_login.html">登录</a>
+          <span>就可以保留购物车中商品</span>
+        </span>
+        <div class="shopcart-goods-box">
+          <div class="shopcart-goods-title">
+            <span class="col col-1"><input type="checkbox" class="checkAll">全选</span>
+            <span class="col col-2">商品</span>
+            <span class="col col-3">单价</span>
+            <span class="col col-4">数量</span>
+            <span class="col col-5">小计</span>
+            <span class="col col-6">操作</span>
+          </div>
+          <div class="item-box">
+            <div class="item-row">
+              <div class="col col-1"><input type="checkbox" class="checked"></div>
+              <div class="col col-2">
+                <div class="goods-pic">
+                  <a href=""><img src="./img/product/md/d16757d718714145ab933140781ca1d6.jpg" alt=""></a>
+                </div>
+                <div class="goods-info">
+                  <a href="">品胜 移动电源 易充四代 四喜丸子 10000mAh 浅豆绿</a>
+                </div>
+              </div>
+              <div class="col col-3"><span class="center">￥<span class="price">75.00</span></span></div>
+              <div class="col col-4">
+                <div class="shopcart-count center">
+                  <button class="reduce">－</button>
+                  <input type="text" value="1" class="count">
+                  <button class="add">＋</button>
+                </div>
+              </div>
+              <div class="col col-5"><span class="center totalPrice">￥75.00</span></div>
+              <div class="col col-6"><button class="center delete">删除</button></div>
+            </div>
+            <div class="item-row">
+              <div class="col col-1"><input type="checkbox" class="checked"></div>
+              <div class="col col-2">
+                <div class="goods-pic">
+                  <a href=""><img src="./img/product/md/d16757d718714145ab933140781ca1d6.jpg" alt=""></a>
+                </div>
+                <div class="goods-info">
+                  <a href="">品胜 移动电源 易充四代 四喜丸子 10000mAh 浅豆绿</a>
+                </div>
+              </div>
+              <div class="col col-3"><span class="center ">￥<span class="price">75.00</span></span></div>
+              <div class="col col-4">
+                <div class="shopcart-count center">
+                  <button class="reduce">－</button>
+                  <input type="text" value="1" class="count">
+                  <button class="add">＋</button>
+                </div>
+              </div>
+              <div class="col col-5"><span class="center totalPrice">￥75.00</span></div>
+              <div class="col col-6"><button class="center delete">删除</button></div>
+            </div>
+            <div class="shopcart-goods-total">
+              <p class="subtotal">￥<span>165.00</span></p>
+              <p>总金额：</p>
+            </div>
+            <div class="shopcart-goods-buy">
+              <button class="next">下一步</button>
+              <button class="continue">继续购物</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer"></footer>
+  <script src="js/jquery-3.2.1.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/cart.js"></script>
+ </body>
+</html>

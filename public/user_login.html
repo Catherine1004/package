@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>用户登录</title>
+  <link rel="stylesheet" href="css/login.css">
+ </head>
+ <body>
+        <header>
+            <a class="logobox" href="#"><img src="img/register/logo.png" alt="">|</a>
+        </header>
+		<section class="loginbox">
+			<div class="login img">
+				<img src="img/register/pic01.png" alt="">
+			</div>
+			<div class="register">
+				<form>
+					<ul>
+						<li>
+							<input id="Account" name="phone" type="text"  placeholder="请输入手机号" maxlength="11" class="input-46">
+							<p for="Account" class="error01">请输入正确的手机号码</p>
+						</li>
+						<li>
+							<input id="Password" name="upwd" type="password" placeholder="密码" maxlength="16"  class="input-46 login_sign01">
+							<p for="Password" class="error01">请输入密码</p>
+						</li>
+						<!-- <li>
+              <input maxlength="4" name="ImageVerifyCode" placeholder="验证码" type="text" value=""  class="input-46 login_sign02">
+              <span>
+                <img src="img/register/ImageVerifyCode.jpg" id="PhoneVCode" alt="未显示?请点击刷新" title="看不清楚？请点击刷新">
+              </span>
+            </li> -->
+						<li>
+							<input checked="checked" id="Remember" name="Remember" type="checkbox" value="true">
+							&nbsp;&nbsp;记住用户名 | <a id="forgetPwd" href="#">忘记密码？</a>
+						</li>
+						<li>
+							<button type="submit" id="btnSubmit" class="btn-orange">登 录</button>
+							<span class="" style="z-index: 3;" id="error"></span>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<span class="registered"><a id="register2" href="user_register.html" class="btn-green">免费注册</a></span>
+		</section>
+        <footer>
+            <div>
+                <a href="#">关于当日达</a>    |
+                <a href="#">联系我们</a>  |
+                <a href="#">友情链接</a>
+            </div>
+            <div>Copyright © 2011-2015 Pisen.com.cn Powered By Pisen Inc.</div>
+        </footer>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+    <script src="js/login.js"></script>
+ </body>
+</html>
